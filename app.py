@@ -24,4 +24,5 @@ def search_ytmusic(query):
     return jsonify({'results': search_results, 'title': title, 'video_url': video_url})
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0', threaded=True)
+
